@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="dist/output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    #gradient-canvas {
+      --gradient-color-1: #ff333d;
+      --gradient-color-2: #a960ee;
+      --gradient-color-3: #ffcb57;
+      --gradient-color-4: #90e0ff;
+    }
+  </style>
+
+  <title>Stripe Clone</title>
+</head>
+
+<body>
+  <canvas class="h-full w-full -skew-y-12 -translate-y-1/2 absolute inset-0" id="gradient-canvas"></canvas>
+  <div class="relative h-screen max-w-[1080px] mx-auto">
+    <header>
+      <nav class="flex absolute top-0 left-0 right-0 items-center justify-evenly mx-auto p-8">
+        <h1 class="mr-auto">
+          <a href="#"><img src="src/assets/img/logo.svg" alt="logo" /></a>
+        </h1>
+        <ul class="custom-md:flex items-center space-x-8 hidden text-white font-bold">
+          <li>
+            <a href="#">Products</a>
+          </li>
+          <li>
+            <a href="#">Solutions</a>
+          </li>
+          <li>
+            <a href="#">Developers</a>
+          </li>
+          <li>
+            <a href="#">Company</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+        </ul>
+        <span class="ml-auto hidden custom-md:block text-white font-bold bg-white/20 py-1 px-4 rounded-full"><a
+            href="#">Sign in</a></span>
+        <button class="bg-white/20 py-[11px] px-4 rounded-2xl custom-md:hidden"><svg width="16" height="10"
+            viewBox="0 0 16 10">
+            <title>Open mobile navigation</title>
+            <g fill="#FFFFFF" fill-rule="evenodd">
+              <rect y="8" width="16" height="2" rx="1"></rect>
+              <rect y="4" width="16" height="2" rx="1"></rect>
+              <rect width="16" height="2" rx="1"></rect>
+            </g>
+          </svg></button>
+      </nav>
+    </header>
+    <div class="flex h-full w-full absolute top-0 left-0 right-0 mt-36 p-8">
+      <div class="flex flex-col justify-between h-1/2 w-full space-y-12">
+        <h2 class="text-[clamp(2.7rem,_8vw_-_2rem,_8rem)] max-w-md leading-none tracking-tighter font-bold">
+          Payments
+          infrastructure for the internet</h2>
+        <p class="text-lg">Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and
+          APIs to accept
+          payments, send payouts, and manage their businesses online.</p>
+        <div class="flex w-full justify-center space-x-2">
+          <a href="#" class="py-1 px-4 rounded-full bg-slate-800 text-white">Start now</a>
+          <a href="#" class="py-1 px-4">Contact sales</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <section class="grid grid-cols-2 sm:grid-cols-4 grid-flow-row max-w-[1080px] mx-auto place-items-center mt-24">
+      <div class="h-24">
+        <div class="w-full h-full"><img src="src/assets/img/instacart.svg" alt="instacart"></div>
+      </div>
+      <div class="h-24">
+        <div class="w-full h-full"><img src="src/assets/img/salesforce.svg" alt="instacart"></div>
+      </div>
+      <div class="h-24">
+        <div class="w-full h-full"><img src="src/assets/img/amazon.svg" alt="instacart"></div>
+      </div>
+      <div class="h-24">
+        <div class="w-full h-full"><img src="src/assets/img/slack.svg" alt="instacart"></div>
+      </div>
+      <div class="h-24">
+        <div class="w-full h-full"><img src="src/assets/img/shopify.svg" alt="instacart"></div>
+      </div>
+      <div class="h-24">
+        <div class="w-full h-full"><img src="src/assets/img/google.svg" alt="instacart"></div>
+      </div>
+      <div class="h-24">
+        <div class="w-full h-full"><img src="src/assets/img/lyft.svg" alt="instacart"></div>
+      </div>
+      <div class="h-24">
+        <div class="w-full h-full"><img src="src/assets/img/zoom.svg" alt="instacart"></div>
+      </div>
+    </section>
+    <section class="py-28 mt-12 bg-blue-50">
+      <div class="flex flex-col w-full space-y-6 sm:flex-wrap max-w-[1080px] mx-auto tracking-widest p-8">
+        <div class="max-w-md sm:flex-[1_1_100%] w-full">
+          <h2 class="text-blue-700 font-bold">Unified platform</h2>
+          <h3 class="text-4xl font-semibold mt-6">A fully integrated suite of payments products</h3>
+        </div>
+        <div class="sm:flex gap-6 w-full">
+          <p class="max-w-md flex-auto w-full">We bring together everything that’s required to build websites and apps
+            that
+            accept
+            payments and send
+            payouts
+            globally. Stripe’s products power payments for online and in-person retailers, subscriptions businesses,
+            software platforms and marketplaces, and everything in between.</p>
+          <p class="max-w-md my-8 sm:my-0 flex-auto sm:pl-8 w-full">We also help companies beat fraud, send invoices,
+            issue
+            virtual and
+            physical
+            cards, get
+            financing, manage
+            business spend, and much more.</p>
+        </div>
+        <div class="max-w-md sm:flex-[1_1_100%]">
+          <a href="#" class="bg-blue-600 py-1 px-3 text-white rounded-full inline-block">Start with payments</a>
+        </div>
+      </div>
+    </section>
+    <section class="py-28 relative bg-[#002c59]">
+      <div class="flex z-20 flex-col w-full space-y-6 sm:flex-wrap max-w-[1080px] mx-auto tracking-widest p-8 bg-skew">
+        <div class="max-w-md sm:flex-[1_1_100%] w-full">
+          <h2 class="text-blue-400 font-bold">Designed for Developers</h2>
+          <h3 class="text-4xl font-semibold mt-6 text-white/90">The world’s most powerful and easy-to-use APIs</h3>
+        </div>
+        <div class="sm:flex gap-6 w-full">
+          <p class="max-w-md flex-auto w-full text-white/60">We agonize over the right abstractions so your teams don’t
+            need to stitch
+            together disparate systems or spend months integrating payments functionality.</p>
+        </div>
+        <div class="max-w-md sm:flex-[1_1_100%]">
+          <a href="#" class="bg-blue-300 text-stone-900 py-1 px-3 rounded-full inline-block">Read the
+            docs</a>
+        </div>
+        <div class="flex max-w-md flex-col sm:flex-row">
+          <div class="space-y-4 flex flex-col">
+            <div class="max-w-md sm:flex-[1_1_100%] w-full">
+              <h3 class="text-sm font-semibold mt-6 text-white/90">Tools for every stack</h3>
+            </div>
+            <div class="sm:flex gap-6 w-full">
+              <p class="max-w-md flex-auto w-full text-white/60 text-sm">We offer client and server libraries in
+                everything from
+                React and PHP to .NET and iOS.</p>
+            </div>
+            <a href="#" class="text-blue-400 underline inline-block">See libraries</a>
+          </div>
+          <div class="space-y-4 flex flex-col">
+            <div class="max-w-md sm:flex-[1_1_100%] w-full">
+              <h3 class="text-sm font-semibold mt-6 text-white/90">Prebuilt integrations</h3>
+            </div>
+            <div class="sm:flex gap-6 w-full">
+              <p class="max-w-md flex-auto w-full text-white/60 text-sm">Use integrations for systems like Shopify,
+                WooCommerce,
+                NetSuite, and more.</p>
+            </div>
+            <a href="#" class="text-blue-400 underline inline-block">Explore partners</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-28 relative">
+      <div class="flex z-20 flex-col w-full space-y-6 sm:flex-wrap max-w-[1080px] mx-auto tracking-widest p-8">
+        <div class="max-w-screen-md sm:flex-[1_1_100%] w-full">
+          <h2 class="text-indigo-500 font-bold">Why Stripe</h2>
+          <h3 class="text-4xl font-semibold mt-6">A technology-first approach to payments and finance</h3>
+        </div>
+        <div class="flex flex-col gap-4 sm:flex-row">
+          <div class="space-y-4">
+            <div class="max-w-md sm:flex-[1_1_100%] w-full">
+              <h3 class="text-sm font-semibold mt-6 text-stone-700">Close to the metal</h3>
+            </div>
+            <div class="sm:flex w-full">
+              <p class="max-w-md flex-auto w-full text-sm">From direct integrations with card networks and
+                banks to checkout flows in the browser, we operate on and optimize at every level of the financial
+                stack.</p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="max-w-md sm:flex-[1_1_100%] w-full">
+              <h3 class="text-sm font-semibold mt-6 text-stone-700">Fastest-improving platform</h3>
+            </div>
+            <div class="sm:flex w-full">
+              <p class="max-w-md flex-auto w-full text-sm">We release hundreds of features and
+                improvements each year to help you stay ahead of industry shifts. (On average, we deploy our production
+                API 16x per day.)</p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="max-w-md sm:flex-[1_1_100%] w-full">
+              <h3 class="text-sm font-semibold mt-6 text-stone-700">Battle-tested reliability</h3>
+            </div>
+            <div class="sm:flex w-full">
+              <p class="max-w-md flex-auto w-full text-sm">Our systems operate with 99.99%+ uptime and are
+                highly scalable and redundant. Stripe is certified to the highest compliance standards.</p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="max-w-md sm:flex-[1_1_100%] w-full">
+              <h3 class="text-sm font-semibold mt-6 text-stone-700">Intelligent optimizations</h3>
+            </div>
+            <div class="sm:flex w-full">
+              <p class="max-w-md flex-auto w-full text-sm">Our machine learning models train on billions
+                of data points and help increase revenue across conversion, fraud, revenue recovery, and more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-28 relative bg-[#002c59]">
+      <div class="flex z-20 flex-col w-full space-y-6 sm:flex-wrap max-w-[1080px] mx-auto tracking-widest p-8 bg-skew">
+        <div class="max-w-md sm:flex-[1_1_100%] w-full">
+          <h2 class="text-blue-400 font-bold">Global scale</h2>
+          <h3 class="text-4xl font-semibold mt-6 text-white/90">The backbone for internet business</h3>
+        </div>
+        <div class="sm:flex gap-6 w-full">
+          <p class="max-w-md flex-auto w-full text-white/60">For ambitious companies around the world, Stripe makes
+            moving money as simple, borderless, and programmable as the rest of the internet. Our teams are based in
+            dozens of offices around the world and we process hundreds of billions of dollars each year for startups to
+            Fortune 500s.</p>
+        </div>
+        <div class="flex flex-col gap-4 sm:flex-row">
+          <div class="space-y-4">
+            <div class="max-w-md sm:flex-[1_1_100%] w-full">
+              <h3 class="text-2xl font-strong mt-6 text-white/90">250M+</h3>
+            </div>
+            <div class="sm:flex w-full">
+              <p class="max-w-md flex-auto w-full text-sm">API requests per day, peaking at 13,000 requests a second.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="max-w-md sm:flex-[1_1_100%] w-full">
+              <h3 class="text-2xl font-strong mt-6 text-white/90">90%</h3>
+            </div>
+            <div class="sm:flex w-full">
+              <p class="max-w-md flex-auto w-full text-sm">of U.S. adults have bought from businesses using Stripe.</p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="max-w-md sm:flex-[1_1_100%] w-full">
+              <h3 class="text-2xl font-strong mt-6 text-white/90">135+</h3>
+            </div>
+            <div class="sm:flex w-full">
+              <p class="max-w-md flex-auto w-full text-sm">currencies and payment methods supported.</p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="max-w-md sm:flex-[1_1_100%] w-full">
+              <h3 class="text-2xl font-strong mt-6 text-white/90">35+</h3>
+            </div>
+            <div class="sm:flex w-full">
+              <p class="max-w-md flex-auto w-full text-sm">countries with local acquiring, optimizing acceptance rates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-28 relative">
+      <div class="flex z-20 flex-col w-full space-y-6 sm:flex-wrap max-w-[1080px] mx-auto tracking-widest p-8">
+        <div class="max-w-screen-md sm:flex-[1_1_100%] w-full">
+          <h3 class="text-4xl font-semibold mt-6">Ready to get started?</h3>
+        </div>
+        <div class="max-w-screen-md sm:flex-[1_1_100%] w-full">
+          <p>Explore Stripe Payments, or create an account instantly and start accepting payments. You can also contact
+            us to design a custom package for your business.</p>
+        </div>
+        <div class="max-w-screen-md sm:flex-[1_1_100%] w-full">
+          <a href="https://stripe.com/payments"
+            class="inline-block bg-indigo-500 hover:bg-blue-500 text-white text-sm font-light py-1 px-3 rounded-full">
+            Start now
+          </a>
+          <a href="https://stripe.com/contact"
+            class="inline-block text-indigo-500 text-sm font-semibold py-1 px-3 rounded-full">
+            Contact sales
+          </a>
+        </div>
+        <div class="flex flex-col gap-4 sm:flex-row">
+          <div class="space-y-4">
+            <div class="max-w-md sm:flex-[1_1_100%] w-full">
+              <h3 class="text-sm font-semibold mt-6 text-stone-700">Always know what you pay</h3>
+            </div>
+            <div class="sm:flex w-full">
+              <p class="max-w-md flex-auto w-full text-sm">Integrated per-transaction pricing with no hidden fees.</p>
+            </div>
+            <div class="text-indigo-500 text-sm font-semibold"><a href="#">Pricing details</a></div>
+          </div>
+          <div class="space-y-4">
+            <div class="max-w-md sm:flex-[1_1_100%] w-full">
+              <h3 class="text-sm font-semibold mt-6 text-stone-700">Start your integration</h3>
+            </div>
+            <div class="sm:flex w-full">
+              <p class="max-w-md flex-auto w-full text-sm">Get up and running with Stripe in as little as 10 minutes.
+              </p>
+            </div>
+            <div class="text-indigo-500 text-sm font-semibold"><a href="#">API reference</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src=" src/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/videsigns/webflow-tools@main/webgl-gradient.js"> </script>
+  <script>
+    var gradient = new Gradient()
+    gradient.initGradient('#gradient-canvas');
+  </script>
+</body>
+
+</html>
